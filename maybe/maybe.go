@@ -39,11 +39,11 @@ type None[T any] struct {
 }
 
 func (s None[T]) Some() bool {
-	return true
+	return false
 }
 
 func (s None[T]) None() bool {
-	return false
+	return true
 }
 
 func (s None[T]) Value() T {
