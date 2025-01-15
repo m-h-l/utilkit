@@ -19,3 +19,7 @@ func (p Pair[T, U]) First() T {
 func (p Pair[T, U]) Second() U {
 	return p.second
 }
+
+func (p Pair[T, U]) Get() T, U {
+	return p.first, p.second
+}
