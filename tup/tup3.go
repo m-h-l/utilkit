@@ -7,7 +7,7 @@ type Tup3[T, U, V any] struct {
 }
 
 func Of3[T, U, V any](first T, second U, third V) Tup3[T, U, V] {
-	return Tup3[T, U]{
+	return Tup3[T, U, V]{
 		first:  first,
 		second: second,
 		third:  third,
@@ -22,7 +22,7 @@ func (p Tup3[T, U, V]) Second() U {
 	return p.second
 }
 
-func (p Tup3[T, U, V]) Third() U {
+func (p Tup3[T, U, V]) Third() V {
 	return p.third
 }
 
