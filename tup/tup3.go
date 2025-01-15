@@ -22,8 +22,8 @@ func (p Tup3[T, U, V]) Second() U {
 	return p.second
 }
 
-func (p Tup3[T, U, V]) Second() U {
-	return p.second
+func (p Tup3[T, U, V]) Third() U {
+	return p.third
 }
 
 func (p Tup3[T, U, V]) Get() (T, U, V) {
